@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+  .ICON{
+      pointer-events: none;
+  }
+  .ICON img{
+      position: absolute;
+      width: 350px;
+      left:10px;
+      top: -15px;
+  }
+  .header{
+    display:flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 7vw;
+    background: linear-gradient(rgb(3, 164, 204),rgb(3, 89, 187));
+    border-bottom: 2px solid rgb(1, 47, 58);
+    box-shadow: 0 2px 20px rgb(1, 71, 92);
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+}
+.cabecera{
+margin-left: 15%;   
+font-weight: bold;
+}
+.cabecera ul li{
+  display: inline-block;
+  margin-right: 40px;
+  transition: 0.3s ease-in-out;
+}
+.cabecera ul li:hover{
+  transform: scale(1.1);
+}
+.RESERVA_CONTACTO{
+  display: flex;  
+  align-items: center;
+  font-weight: bold; 
+}
+
+.RESERVA_CONTACTO li{
+margin-right: -10px;
+margin-left: 10px;    
+transition: 0.3s ease-in-out;
+display: inline-block;
+
+}
+.RESERVA_CONTACTO li:hover{
+transform: scale(1.1);
+}
+
+.center button{
+    padding:10px 20px;
+    font-size:20px;
+    font-weight:bold;
+    color:#222;
+    background:#feffff79;
+    border:2px solid rgb(40, 166, 238);
+    outline:none;
+    cursor:pointer;
+    border-end-end-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  
+  .popup{
+    position:absolute;
+    top:-350%;
+    left:50%;
+    opacity: 0;
+    transform:translate(-50%,-50%) scale(1.25);
+    width:380px;
+    padding:20px 30px;
+    background:#fff;
+    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius:10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+
+  }
+  .popup.active{
+    top: 50vh;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+  }
+  .popup .close-btn{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:15px;
+    height:15px;
+    background:#888;
+    color:#eee;
+    text-align:center;
+    line-height:15px;
+    border-radius:15px;
+    cursor:pointer;  
+  }
+  .popup .form h2{
+    text-align:center;
+    color:#222;
+    margin:10px 0px 20px;
+    font-size:25px;
+  }
+  .popup .form .form-element{
+    margin:15px 0px;
+  }
+  .popup .form .form-element label{
+    font-size:14px;
+    color:#222;
+  }
+  .popup .form .form-element input[type="text"]{
+    margin-top:5px;
+    display:block;
+    width:100%;
+    padding:10px;
+    outline:none;
+    border:1px solid #aaa;
+    border-radius:5px;
+    
+  }
+
+  .popup .form-element button{
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    font-size: 16px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  #menu div{
+      width: 35px;
+      height: 3px;
+      background-color:rgb(3, 3, 3);
+      margin: 6px 0;
+      transition: 0.5s;
+  }
+  .change .bar1{
+      -webkit-transform: rotate(-45deg) translate(-6px,6px);
+      transform: rotate(-45deg) translate(-6px,6px);
+  }
+  .change .bar2{
+      opacity: 0;
+  }
+  .change .bar3{
+      -webkit-transform: rotate(45deg) translate(-6px,-8px);
+      transform: rotate(45deg) translate(-6px,-8px);
+  }
+  #menu{
+      display: inline-block;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 15px;
+      display: none;        
+  }
+  #mobilemenu{
+        font-weight: bold;
+        position:absolute;
+        top:80px;
+        left: -1000%;
+        cursor:pointer;  
+        display: none;
+
+}
+  #mobilemenu button{
+    font-size: 15px;
+    border:none;
+    outline:none;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #mobilemenu li{   
+      text-align: center;
+      width: 200px;
+      margin: 8px;
+      padding: 10px;
+      background: linear-gradient(rgb(3, 164, 204),rgb(3, 89, 187));
+      border-radius: 8px;
+      box-shadow: 0 2px 20px rgb(0, 43, 134);
+      display: inline-block;
+      transition: 0.3s ease-in-out;
+      border: 2px solid black;
+  }
+  #mobilemenu ul li:hover{
+      transform: scale(1.1);
+      font-weight: bold;
+  }
+
+  .INICIO{
+    background-image: url(Fondo.jpeg);
+    padding:3vw 7vw;
+    display: block;
+    text-align: center;
+    background-size: cover;
+    
+}
+
+.Plato img{
+    margin-top: 30px;
+    display: flex;
+    margin-left: 30%;
+    border-radius: 20px;
+    box-shadow: 0 5px 8px;
+    border: 3px solid black;
+    height: 700px; 
+    opacity: 1;
+    mask-image: linear-gradient(
+    to bottom,
+    black 80%,
+    transparent 110%);
+    animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+.Plato p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.INICIO h1{
+    background: linear-gradient(to right, rgb(2, 112, 139),rgb(3, 89, 187));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(3, 164, 204);
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    z-index: -1;
+}
+
+.INICIO h2{
+    width: 100%;
+    margin-bottom: 50px;
+    background: linear-gradient(rgb(224, 228, 2),rgb(192, 125, 2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(192, 125, 2);
+}
+.INICIO h3{
+    font-size: 25px;
+}
+.Platos h3{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.Platos{
+    padding: 10px 5px;
+    background: linear-gradient(to right, rgb(3, 164, 204),rgb(3, 89, 187));
+    border-radius: 50px;
+    border: 3px solid black;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.Platos p{
+    padding: 10px;
+}
+.Item{
+    width: 200px;
+    font-size: 15px;
+    height: 10vw;
+    font-weight: bold;
+    margin-bottom: 300px;
+}
+.Item p{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.Item h3{
+    padding-top: 10px;
+    font-size: 18px;  
+}
+.Item img{
+    width: 200px;
+    margin-top: -10px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px;
+    border: 2px solid black; 
+    
+}
+
+.Platos :nth-child(3) img{
+    width: 200px;
+    height: 200px;
+}
+.Platos :nth-child(7) img{
+    width: 200px;
+    height: 200px;
+}
+
+.white_btn{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    line-height: 30px;
+    background: linear-gradient(rgb(224, 228, 2),rgb(192, 125, 2));
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 5px 20px rgb(0, 0, 0);
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.PlatosT{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+    background: linear-gradient(to right, rgb(3, 164, 204),rgb(3, 89, 187));
+    border-radius: 50px;
+    border: 3px solid black;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.Postres{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(3, 164, 204),rgb(3, 89, 187));
+    border-radius: 50px;
+    border: 3px solid black;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+}
+.Pos h3{
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.Postres .Pos img{
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px;
+    border: 2px solid black; 
+}
+
+.Bebidas{
+    background: linear-gradient(to right, rgb(3, 164, 204),rgb(3, 89, 187));
+    border-radius: 50px;
+    border: 3px solid black;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px ;
+    width: 100%;
+}
+
+.Bebidas ul{
+    margin-bottom: 40px;
+}
+.Bebidas ul li{
+    margin:40px 0px;
+}
+
+@media (prefers-reduced-motion: no-preference){
+    .Platos,.PlatosT,.Postres,.Bebidas{
+scale: 0.8; opacity: 0;
+animation: fade-in linear forwards;
+animation-timeline: view();
+animation-range: entry 10px;
+}
+ 
+  @keyframes fade-in{
+    to{scale: 1; opacity: 1;}
+}
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+  @media only screen and (max-width:1366px) {
+    .cabecera{
+        display: none;
+        }
+    .RESERVA_CONTACTO #show-login,
+    .RESERVA_CONTACTO li{
+        display: none;
+    }
+    .ICON img{
+        position: absolute;
+        right: 200px;
+        margin-right: 10px ;
+        margin-bottom: 100px;
+        top: -15px;
+    }
+    #menu{
+        position: absolute;
+        top: 50%;
+        left: 80%; 
+        display: block; 
+    }
+    .Plato img{
+        border-radius: 30px;
+        width: 50vw;
+        height: auto;
+       margin: 0;
+       margin-left: 20%;
+       margin-top: 40px;
+    }
+    .INICIO h1{
+        margin-top: 100px;
+    }
+    .INICIO h3{
+        font-size: 15px;
+    }
+    .Plato p{
+        font-size: 16px;
+    }
+    .Platos h2{
+        font-size: 16px;
+    }
+    .Platos img{
+        width: 100px;
+        height: auto;
+    }
+    .Platos :nth-child(3) img{
+        width: 100px;
+        height: 100px;
+    }
+    .Platos :nth-child(7) img{
+        width: 100px;
+        height: 100px;
+    }
+    .PlatosT img{
+        width: 100px;
+        height: auto;
+    }
+    .Postres{
+        padding: 20px 30px;
+    }
+    .Postres .Pos img{
+        width: 100px;
+        height: auto;
+    }
+    .Postres .Pos{
+        padding: 10px;
+    }
+    .Postres h3{
+        font-size: 14px;
+    }
+    .Bebidas{
+        font-size: 14px;
+    }
+    #mobilemenu{
+        left:-1000%;
+       }
+}
+
+@media only screen and (max-width:720px){
+    .INICIO h1{
+        margin-top: 100px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .Plato img{
+        margin-top: 50px;
+    }
+    .Plato p{
+        font-size: 14px;
+    }
+    .Platos p{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .PlatosT p{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .Postres{
+        display: inline-block;
+        flex-wrap: wrap;
+    }
+    .Bebidas{
+        font-size: 13px;
+    }
+    #mobilemenu{
+        left:-700%;
+       }
+       .popup{
+        width:250px;
+        padding:10px 30px;
+    }
+       
+}

@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+  }
+  .ICON{
+      pointer-events: none;
+  }
+  .ICON img{
+      position: absolute;
+      width: 350px;
+      left:10px;
+      top: -15px;
+  }
+  .header{
+    display:flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 7vw;
+    background: linear-gradient(rgb(3, 164, 204),rgb(3, 89, 187));
+    border-bottom: 2px solid rgb(1, 47, 58);
+    box-shadow: 0 2px 20px rgb(1, 71, 92);
+    font-size: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+}
+.cabecera{
+margin-left: 15%;  
+font-weight: bold;
+}
+.cabecera ul li{
+  display: inline-block;
+  margin-right: 40px;
+  transition: 0.3s ease-in-out;
+}
+.cabecera ul li:hover{
+  transform: scale(1.1);
+}
+.RESERVA_CONTACTO{
+  display: flex;  
+  align-items: center;
+  font-weight: bold; 
+}
+
+.RESERVA_CONTACTO li{
+margin-right: -10px;
+margin-left: 10px;    
+transition: 0.3s ease-in-out;
+display: inline-block;
+
+}
+.RESERVA_CONTACTO li:hover{
+transform: scale(1.1);
+}
+
+.center button{
+    padding:10px 20px;
+    font-size:20px;
+    font-weight:bold;
+    color:#222;
+    background:#feffff79;
+    border:2px solid rgb(40, 166, 238);
+    outline:none;
+    cursor:pointer;
+    border-end-end-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  
+  .popup{
+    position:absolute;
+    top:-350%;
+    left:50%;
+    opacity: 0;
+    transform:translate(-50%,-50%) scale(1.25);
+    width:380px;
+    padding:20px 30px;
+    background:#fff;
+    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius:10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+
+  }
+  .popup.active{
+    top: 50vh;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+  }
+  .popup .close-btn{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:15px;
+    height:15px;
+    background:#888;
+    color:#eee;
+    text-align:center;
+    line-height:15px;
+    border-radius:15px;
+    cursor:pointer;  
+  }
+  .popup .form h2{
+    text-align:center;
+    color:#222;
+    margin:10px 0px 20px;
+    font-size:25px;
+  }
+  .popup .form .form-element{
+    margin:15px 0px;
+  }
+  .popup .form .form-element label{
+    font-size:14px;
+    color:#222;
+  }
+  .popup .form .form-element input[type="text"]{
+    margin-top:5px;
+    display:block;
+    width:100%;
+    padding:10px;
+    outline:none;
+    border:1px solid #aaa;
+    border-radius:5px;
+    
+  }
+
+  .popup .form-element button{
+    width:100%;
+    height:40px;
+    border:none;
+    outline:none;
+    font-size: 16px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  #menu div{
+      width: 35px;
+      height: 3px;
+      background-color:rgb(3, 3, 3);
+      margin: 6px 0;
+      transition: 0.5s;
+  }
+  .change .bar1{
+      -webkit-transform: rotate(-45deg) translate(-6px,6px);
+      transform: rotate(-45deg) translate(-6px,6px);
+  }
+  .change .bar2{
+      opacity: 0;
+  }
+  .change .bar3{
+      -webkit-transform: rotate(45deg) translate(-6px,-8px);
+      transform: rotate(45deg) translate(-6px,-8px);
+  }
+  #menu{
+      display: inline-block;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 15px;
+      display: none;        
+  }
+  #mobilemenu{
+    font-weight: bold;
+    position:absolute;
+    top:80px;
+    left: -1000%;
+    cursor:pointer;  
+    display: none;
+}
+#mobilemenu button{
+    font-size: 15px;
+    border:none;
+    outline:none;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #mobilemenu li{   
+      text-align: center;
+      width: 200px;
+      margin: 8px;
+      padding: 10px;
+      background: linear-gradient(rgb(3, 164, 204),rgb(3, 89, 187));
+      border-radius: 8px;
+      box-shadow: 0 2px 20px rgb(0, 43, 134);
+      display: inline-block;
+      transition: 0.3s ease-in-out;
+      border: 2px solid black;
+  }
+  #mobilemenu ul li:hover{
+      transform: scale(1.1);
+      font-weight: bold;
+  }
+  .Introduccion{
+       padding: 100px;
+       text-align: center;
+       margin: 0;
+       padding: 0;
+       scroll-snap-type: y mandatory;
+       overflow-y: scroll;
+       height: 100vh;
+  }
+  h1{
+    color: white;
+    text-shadow: 1px 1px 4px black;
+    margin-bottom: 15px;
+  }
+  p{
+    padding: 30px;
+    margin-bottom: 10px;
+  }
+  section{
+    height: 100vh;
+    display: flex;
+   scroll-snap-align: start;
+   padding: 150px;
+   display: block;
+  }
+ .uno{
+  padding-top: 150px;
+  background-color:#0266a0a6;;
+  display: block;
+ }
+ p{
+  font-weight: bold;
+  padding: 30px;
+  text-align: center;
+ }
+ .uno img{
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: 2px solid black;
+  width: 500px; 
+ }
+ .dos{
+  background-color: #0266a0a6;
+  padding-top: 150px;
+ }
+ .tres{
+  background-color: #0266a0a6;
+  padding-top: 150px;
+ }
+
+ .cuatro{
+  background-color: #0266a0a6;
+  padding-top: 150px;
+ }
+.COCINA,
+.SALA{
+   margin-top: 30px;
+   align-items: center;
+   text-align: center;
+}
+.COC,
+.CAM{
+    background-color: rgba(7, 131, 214, 0.336);
+    border-end-end-radius: 30px;
+    border-top-left-radius: 30px;
+    border: 3px solid black;
+    padding: 10px;
+}
+.COCINA h2,
+.SALA h2{
+    padding: 5px;
+}
+.COCINA p,
+.SALA p{
+    padding: 5px;
+    font-size: 20px;
+}
+.COCINA h3,
+.SALA h3{
+    padding: 10px;
+}
+.Cimg img,
+.Simg img {
+  width: 250px;
+  border: 3px solid black;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin:15px; 
+  box-shadow: 0px 5px 10px;
+  margin-top: 50px;
+}
+.Persona{
+    width: 100%;
+    margin: 10px;
+}
+
+.Cimg,
+.Simg{
+    display: flex;
+}
+
+.Cimg p,
+.Simg p{
+    padding: 5px 5px;
+    border-radius: 50px;   
+    animation: parpadeo 1.5s infinite alternate;
+    border: 2px solid black;
+    box-shadow: 0 2px 2px;  
+    pointer-events: none; 
+}
+@keyframes parpadeo{
+  0%{
+      background-color: rgb(30, 233, 74);
+  }
+  100%{
+      background-color: gray;
+  }
+}
+  @media only screen and (max-width:1366px) {
+    .cabecera{
+        display: none;
+        }
+    .RESERVA_CONTACTO #show-login,
+    .RESERVA_CONTACTO li{
+        display: none;
+    }
+    .ICON img{
+        position: absolute;
+        right: 200px;
+        margin-right: 10px ;
+        margin-bottom: 100px;
+        top: -15px;
+    }
+    #menu{
+        position: absolute;
+        top: 50%;
+        left: 80%; 
+        display: block; 
+    }
+    #mobilemenu{
+        left:-1000%;
+       }
+    }
+
+  @media only screen and (max-width:720px){
+        #mobilemenu{
+            left:-700%;
+           }
+           .popup{
+            width:250px;
+            padding:10px 30px;
+        }
+    .uno img{
+      width: 20vh;
+      height: 20vh;
+      margin: 0;
+    }
+    h1{
+      font-size: 15px;
+    }
+    p{
+      font-size: 11px;
+      padding: 0;
+      margin-bottom: 5px;
+    }
+        .Cimg img ,
+        .Simg img{
+     display: none;
+}
+.Cimg,
+.Simg{
+   font-size: 12px;
+   display: block;
+   margin-left: -15px;
+}
+
+.COC,
+.CAM{
+ padding: 2px;
+}
+        .COCINA p,
+        .SALA p{
+        font-size: 13px;    
+    }
+    }
+
+    

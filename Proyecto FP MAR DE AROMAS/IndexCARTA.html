@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+ <html lang="es">
+           <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="descripcion" content="RESTAURANTE GALLEGO CON PRODUCTOS FRESCOS">
+            <link rel="ICON" href="LOGOSINFONDO.png" type="png">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />            
+            <link rel="stylesheet" href="CustomCARTA.css">
+            <title>MAR DE AROMAS RESTAURANTE</title>         
+           </head>
+           <body>          
+            <header>
+              <div class="header">                                    
+                                    
+                     <div class="ICON">
+                          <img src="MAR_DE_AROMAS_arribaSIN FONDO.png".png> 
+                     </div>     
+                    
+                     <div id="menu" onclick="togglemobilemenu(this)">                          
+                     <div class="bar1"></div>
+                     <div class="bar2"></div>
+                     <div class="bar3"></div>
+                     <nav id="mobilemenu">
+                     <ul>  
+                       <li><a href="Index.html">INICIO</a></li>
+                       <li><a href="IndexCARTA.html">CARTA</a></li>                        
+                       <li><a href="IndexQSOMOS.html">QUIÉNES SOMOS</a></li>   
+                       <li><button class="red_btn">RESERVA</button></li>                  
+                     </ul>
+                     </div> 
+                     </nav>                  
+                     <div class="cabecera">
+                       <ul>
+                         <li><a href="Index.html">INICIO</a></li>
+                         <li><a href="IndexCARTA.html">CARTA</a></li>                        
+                         <li><a href="IndexQSOMOS.html">QUIÉNES SOMOS</a></li>
+                       </ul>                                   
+                     </div>
+                     <div class="RESERVA_CONTACTO">
+                        <div class="center">
+                          <button id="show-login">RESERVA</button>
+                        </div>
+                        <div class="popup">
+                          <div class="close-btn">&times;</div>
+                          <div class="form">
+                            <h2>RESERVA</h2>
+                            <div class="form-element">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" id="Nombre" placeholder="Enter Name">
+                            </div> 
+                        <div class="form-element">
+                          <label for="Fecha">FECHA</label>  
+                          <input type="text" id="fecha" placeholder="DD/MM/YYYY">
+                          
+                            </div>
+                         <div class="form-element">   
+                         <label for="HORA">HORA</label>
+                          <input type="text" id="HORA" placeholder="Hora">
+                        </div>
+                        <div class="form-element">
+                         <label for="Personas">Personas</label>
+                          <input type="text" id="PERSONAS" placeholder="Personas">
+                          </div>
+                        <div class="form-element">
+                        <button>RESERVAR</button>
+                        </div>
+                        </div>
+                    </div>
+                        <li><a href="CONTACTO.html">CONTACTO</a></li>
+                    </div>                
+            </header>  
+                 <div class="INICIO">                 
+                 <div class="Plato">
+                      <div>
+                        <h1>CARTA</h1>
+                        <h3>PLATO ESTRELLA</h3>
+                         <img src="PLATO_VARIADO.jpg" alt="Plato con multiples platos en Uno">
+                          </div>
+                            <P>Nuestros plato estrella contiene la gran variedad de mariscos de nuestra carta, ideal para varios comensales</P>
+                                   <button class="white_btn">Precio 60€</button>                       
+                       </div>
+                 <div class="Platos">
+                  <h2>MAR</h2>
+                 <div class="Item">
+                    <div>
+                      <img src="Langosta_INICIO.jpg" alt="Langosta cocinada en plato">
+                    </div>
+                     <h3>LANGOSTA REAL</h3>
+                     <P>Disfrute de nuestra exquisita Langosta Real, tierna y jugosa, cocida a la perfección y acompañada de mantequilla derretida y un toque de limón. Una delicia única del mar.</P>
+                     <button class="white_btn"> Precio 30€</button>
+                    </div>
+                    <div class="Item">
+                      <div>
+                        <img src="PULPO A FEIRA bien.jpg" alt="Pulpo a feira ">
+                      </div>
+                       <h3>PULPO Á FEIRA</h3>
+                       <P>Se cocina lentamente en una olla de cobre, luego se corta en rodajas gruesas y se sirve cubierto con un rocío de aceite de oliva virgen extra, sal marina y pimentón de la Vera.</P>
+                       <button class="white_btn">Precio 12€</button>
+                      </div>
+                      <div class="Item">
+                        <div>
+                          <img src="Vieiras.jpg" alt="Vieiras en plato">
+                        </div>
+                         <h3>VIEIRAS</h3>
+                         <P>Vieiras perfectamente cocinadas a la parrilla, capturadas en su frescura máxima y asadas a la perfección,servidas con una salsa de mantequilla y limón.</P>
+                         <button class="white_btn">Precio 25€</button>
+                        </div>
+                        <div class="Item">
+                          <div>
+                            <img src="Percebes gallegos.jpg" alt="Percebes gallegos">
+                          </div>
+                           <h3>PERCEBES GALLEGOS</h3>
+                           <P>Deliciosos percebes, capturados en las aguas vírgenes de Galicia y servidos frescos, con sabor a mar intenso y su textura carnosa que deleitará su paladar con cada bocado.</P>
+                           <button class="white_btn">Precio 45€</button>
+                          </div>
+                          <div class="Item">
+                            <div>
+                              <img src="Plato de mejillones.jpeg" alt="Plato de mejillones">
+                            </div>
+                             <h3>Mejillones al vapor</h3>
+                             <P>Nuestros mejillones al vapor, un plato que combina la simplicidad con la exquisitez del mar, se cuecen al vapor con ajo aromático, vino blanco y una selección de hierbas frescas,</P>
+                             <button class="white_btn">Precio 10€</button>
+                            </div>
+                            <div class="Item">
+                              <div>
+                                <img src="Plato de navajas.jpg" alt="Plato de navajas">
+                              </div>
+                               <h3>Navajas</h3>
+                               <P>Se cocinan a la perfección en la plancha, realzando su textura tierna y su sabor delicado,se rocían con una generosa porción de mantequilla de ajo y hierbas.</P>
+                               <button class="white_btn">Precio 20€</button>
+                              </div>
+                              <div class="Item">
+                                <div>
+                                  <img src="Plato de ostras.jpeg" alt="Plato de ostras ">
+                                </div>
+                                 <h3>Ostras</h3>
+                                 <P>Cuidadosamente seleccionadas por su calidad y frescura, son presentadas en su caparazón natural y servidas con una deliciosa mignonette de limón y jengibre.</P>
+                                 <button class="white_btn">Precio 15€</button>
+                                </div>
+                                <div class="Item">
+                                  <div>
+                                    <img src="Bacalao.jpeg" alt="Bacalao cocinado en plato">
+                                  </div>
+                                   <h3>Bacalao</h3>
+                                   <P>Deléitese con nuestro suculento Bacalao al Grill, una fusión perfecta de sabores marinos con una textura tierna y acompañado de deliciosas hierbas mediterráneas.</P>
+                                   <button class="white_btn"> Precio 20€</button>
+                                  </div>                                                             
+                                </div>
+                 <div class="PlatosT">
+                  <h2>TIERRA</h2>
+                  <div class="Item">
+                    <div>
+                      <img src="Chuleta de vaca.jpeg" alt="Plato chuleta de vaca de 1000g">
+                    </div>
+                     <h3>Chuleta de vaca vieja</h3>
+                     <P>Disfrute de nuestra Chuleta de Vaca de 1000 gramos, asada a la parrilla para obtener un exterior crujiente y un interior jugoso, lleno de sabor a carne tierna y ahumada.</P>
+                     <button class="white_btn"> Precio 25€</button>
+                    </div>
+                    <div class="Item">
+                      <div>
+                        <img src="ENTRECOT.jpeg" alt="Plato de Entrecot">
+                      </div>
+                       <h3>Entrecot de lomo</h3>
+                       <P>Deléitese con nuestro jugoso Entrecot de Lomo, acompañado de patatas asadas a la perfección, creando un equilibrio de sabores y texturas irresistibles.</P>
+                       <button class="white_btn">Precio 25€</button>
+                      </div>
+                      <div class="Item">
+                        <div>
+                          <img src="Solomillo a la parrilla.jpeg" alt="Solomillo a la parrilla">
+                        </div>
+                         <h3>Solomillo a la parrilla</h3>
+                         <P>Disfrute de nuestro exquisito Solomillo a la Parrilla, con un irresistible sabor ahumado que se combina perfectamente con la selección de acompañamientos frescos.</P>
+                         <button class="white_btn">Precio 22€</button>
+                        </div>
+                        <div class="Item">
+                          <div>
+                            <img src="RAXO.jpeg" alt="Raxo">
+                          </div>
+                           <h3>Raxo</h3>
+                           <P>Saboree nuestro auténtico Raxo, un plato tradicional de Galicia que presenta tiernos trozos de carne marinada, salteada con ajo y pimentón, acompañado de patatas fritas.</P>
+                           <button class="white_btn"> Precio 20€</button>
+                          </div>                    
+                    </div>
+                  <div class="Postres">
+                    <h2>POSTRES</h2>
+                      <div class="Pos">
+                        
+                        <img src="Tarta de queso.jpeg" alt="Tarta de queso">
+                         
+                      <h3>Tarta de queso casera</h3>
+                      <button class="white_btn">Precio 4€</button>
+                      </div>
+                      <div class="Pos">
+                        <img src="coulant de chocolate.jpeg" alt="Coulant de chocolate">
+                      <h3>Coulant de chocolate casero</h3>
+                      <button class="white_btn">Precio 4€</button>
+                        </div>
+                      <div class="Pos">
+                        <img src="Arroz con leche.jpeg" alt="Arroz con leche">
+                      <h3>Arroz con leche casero</h3>
+                      <button class="white_btn">Precio 3€</button>
+                      </div>
+                      <div class="Pos">
+                        <img src="Tarta de manzana.jpeg" alt="Tarta de manzana">
+                      <h3>Tarta de manzana casera</h3>
+                      <button class="white_btn">Precio 3€</button>
+                      </div>
+                      <div class="Pos">
+                        <img src="Flan.jpeg" alt="Flan">
+                      <h3>Flan</h3>
+                      <button class="white_btn">Precio 2.5€</button>
+                      </div>
+                      <div class="Pos">
+                        <img src="Tiramisu.jpeg" alt="Tiramisu">
+                      <h3>Tiramisú</h3>
+                      <button class="white_btn">Precio 3€</button>
+                      </div>                  
+                  </div>
+                    <div class="Bebidas">
+                      <h2>BEBIDAS</h2>
+                      <ul>
+                          <li>AQUARIUS ------------- 2.5€</li>
+                          <li>AGUA 1L--------------- 2€</li>
+                          <li>AGUA 500CL------------ 1.5€</li>
+                          <li>COCA COLA------------- 2.5€</li>
+                          <li>FANTA----------------- 2.5€</li>
+                          <li>ESTRELLA GALICIA ----- 2.5€</li>
+                          <li>1906 ----------------- 3€</li><li></li>                         
+                          <li>Mahou----------------- 2.5€</li>
+                          <li>Estrella Damm--------- 2.5€</li>
+                          <li>Cruzcampo------------- 2.5€</li>
+                          <li>Cafe de pota---------- 2€</li>
+                          <li>Cafe ----------------- 1.5€</li>
+                          <li>Crema de orujo-------- 2€</li>
+                          <li>Té-------------------- 1.5€</li>                    
+                      </ul>
+                     <div class="Vinos"></div> 
+                     <h2>VINOS</h2>
+                      <ul>
+                          <li>Albariño-------------- 3€</li>
+                          <li>Godello--------------- 3€</li>
+                          <li>Treixadura------------ 3€</li>
+                          <li>Mencia---------------- 2.5€</li>
+                          <li>Sousón---------------- 2.70€</li>
+                          <li>Espadeiro------------- 3€</li>
+                      </ul>
+                       </div>
+
+
+
+                    
+                    </div>
+                 <script src="Funciones.js"></script>          
+              
